@@ -4,8 +4,8 @@ import { getFunName } from "../helpers"
 class StorePicker extends React.Component {
   storeName = React.createRef();
 
-  goToStore = event => {
-    event.preventDefault();
+  goToStore = e => {
+    e.preventDefault();
     const storeName = this.storeName.value.value
     this.props.history.push(`/store/${storeName}`);
   };
