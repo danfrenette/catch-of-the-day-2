@@ -14,11 +14,17 @@ class Order extends React.Component {
       )
     } else {
       const count = this.props.order[key]
+      const removeButton = <button onClick={() => this.props.removeFromOrder(key)}>
+                             &times;
+                           </button>
+
       return (
         <li key={key}>
           { count } lbs { fish.name }
           &nbsp;
           { formatPrice(count * fish.price) }
+          &nbsp;
+          { removeButton }
         </li>
       );
     };
