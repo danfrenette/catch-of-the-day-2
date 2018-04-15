@@ -68,11 +68,11 @@ class App extends React.Component {
             { Object.entries(this.state.fishes).map(this.renderFish) }
           </ul>
         </div>
+        <Order fishes={this.state.fishes} order={this.state.order}/>
         <Inventory
           addFish={this.addFish}
           loadSampleFishes={this.loadSampleFishes}
         />
-        <Order fishes={this.state.fishes} order={this.state.order}/>
       </div>
     );
   };
