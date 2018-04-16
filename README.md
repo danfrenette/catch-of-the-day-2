@@ -8,18 +8,18 @@
 
 ## Summary
 
-This is a simple, mostly single page app that might be used to by a seafood
-restaurant to sell fish to people.
+This is a simple, single page app that might be used by a seafood
+company to sell fish.
 
 It's entirely client side, using React to render the vast majority of the HTML
-that you see, and Firebase to store information.
+that you see, and [Firebase](https://firebase.google.com/) to store information.
 
 
 ## Getting Started
 
-The first page you'll see is the storepicker page. All you have to do here is
+The first page you'll see is the store picker page. All you have to do here is
 enter the name of a store (can be anything) in the input and hit the Visit Store
-button. There's even already been one randomly generated for you!
+button. Refresh the page for randomly generated (and often weird) names!
 
 Once you've entered the store, login using GitHub, Facebook, or Twitter. You are
 now the owner of this store, and only you can make changes to the fish in this
