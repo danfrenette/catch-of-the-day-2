@@ -8,13 +8,13 @@ import sampleFishes from "../sample-fishes";
 import base from "../base";
 
 class App extends React.Component {
-  state = {
-    fishes: {},
-    order: {}
-  };
-
   static propTypes = {
     match: PropTypes.object,
+  };
+
+  state = {
+    fishes: {},
+    order: {},
   };
 
   componentDidMount() {
@@ -102,6 +102,7 @@ class App extends React.Component {
           deleteFish={this.deleteFish}
           loadSampleFishes={this.loadSampleFishes}
           fishes={this.state.fishes}
+          storeId={this.props.match.params.storeId}
         />
       </div>
     );
