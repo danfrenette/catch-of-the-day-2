@@ -1,6 +1,9 @@
 # Catch of the Day
 
 ### Created using https://www.reactforbeginners.com
+### Check it out: https://catch-of-the-day-drf2.herokuapp.com/
+
+![Screenshot](https://raw.githubusercontent.com/danfrenette/catch-of-the-day-2/master/public/images/screenshot.png)
 
 
 ## Summary
@@ -38,10 +41,11 @@ Other technical tidbits:
   JavaScript](https://github.com/danfrenette/catch-of-the-day-2/blob/26a4f379b97f90a7436fe9a31c269997e924195b/src/components/Inventory.js#L52)
 * [Built on Google's Firebase Cloud
   Database](https://github.com/danfrenette/catch-of-the-day-2/blob/master/src/base.js)
-* [OAuth sign in (Facebook, Github, Twitter)]()
-* [Extensive use of React components (including stateless functional components)]()
+* [OAuth sign in (Facebook, Github,
+  Twitter)](https://github.com/danfrenette/catch-of-the-day-2/blob/master/src/components/Login.js)
+* [Extensive use of React components (including stateless functional components)](https://github.com/danfrenette/catch-of-the-day-2/blob/master/src/components/)
 * [Extensive templating with
-  JSX](https://github.com/danfrenette/catch-of-the-day-2/tree/26a4f379b97f90a7436fe9a31c269997e924195b/src/components)
+  JSX](https://github.com/danfrenette/catch-of-the-day-2/tree/26a4f379b97f90a7436fe9a31c269997e924195b/src/components/App.js)
 * [URL routing with React Router
   4](https://github.com/danfrenette/catch-of-the-day-2/blob/master/src/components/Router.js)
 * [Advanced state management with local
