@@ -20,6 +20,14 @@ class Inventory extends React.Component {
     owner: null,
   };
 
+  componentDidMount() {
+    firebase.auth().onAuthStateChanged(user => {
+      if (user) {
+        this.authHandler({ user });
+      }
+    });
+  }
+
   authenticate = provider => {
     const authProvider = new firebase.auth[`${provider}AuthProvider`]();
     firebaseApp.auth().signInWithPopup(authProvider).then(this.authHandler);
