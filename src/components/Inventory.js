@@ -34,10 +34,17 @@ class Inventory extends React.Component {
         data: authData.user.uid
       });
     };
+
     this.setState({
       uid: authData.user.uid,
       owner: store.owner || authData.user.uid
     });
+  };
+
+  logout = async () => {
+    console.log("Logging Out!");
+    await firebase.auth().signOut();
+    this.setState({ uid: null });
   };
 
   renderEditForm = ([fishId, fish]) => {
@@ -53,6 +60,8 @@ class Inventory extends React.Component {
   };
 
   render() {
+    const logout = <button onClick={this.logout}>Logout</button>
+
     if (!this.state.uid) {
       return <Login authenticate={this.authenticate}/>
     };
@@ -61,6 +70,7 @@ class Inventory extends React.Component {
       return (
         <div>
           You are not authorized to manage this store's inventory
+          { logout }
         </div>
       );
     };
@@ -68,6 +78,7 @@ class Inventory extends React.Component {
     return (
       <div className="inventory">
         <h2>Inventory</h2>
+        { logout }
         <ul>
           { Object.entries(this.props.fishes).map(this.renderEditForm) }
         </ul>
